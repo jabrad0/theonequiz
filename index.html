@@ -10,44 +10,44 @@
 <body>
 
   <article class="main-article">
-    <section>First sibling
-      <ul>
-        <li>First sibling -> A</li>
-        <li>First sibling -> B</li>
-        <li>First sibling -> C</li>
-        <li>First sibling -> D</li>
+    <section class="odd_section">First sibling
+      <ul class="first_sibling_li">
+        <li class="odd_li">First sibling -> A</li>
+        <li class="even_li">First sibling -> B</li>
+        <li class="odd_li">First sibling -> C</li>
+        <li class="even_li">First sibling -> D</li>
       </ul>
     </section>
-    <section>
+    <section class="even_section">
       Second sibling
-      <aside>Second sibling -> aside 1</aside>
+      <aside id='first_aside'>Second sibling -> aside 1</aside>
       <aside>Second sibling -> aside 2</aside>
       <aside>Second sibling -> aside 3</aside>
     </section>
-    <section>Third sibling
+    <section class="odd_section">Third sibling
       <ul>
-        <li>Third sibling -> A</li>
-        <li>Third sibling -> B</li>
-        <li>Third sibling -> C</li>
-        <li>Third sibling -> D</li>
+        <li class="odd_li">Third sibling -> A</li>
+        <li class="even_li">Third sibling -> B</li>
+        <li class="odd_li">Third sibling -> C</li>
+        <li class="even_li">Third sibling -> D</li>
       </ul>
     </section>
     <section>Fourth sibling</section>
   </article>
 
-  <div>
+  <div class = "right_div">
     I should be on the right side of the screen
   </div>
-  <div>
+  <div class = class = "left_div">
     I should be on the left side of the screen
   </div>
-  <div>
+  <div class = "bottom_div">
     I should render below my two siblings
   </div>
 
   <div id="vanilla_output"></div>
   <div id="jquery_output"></div>
-  
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/main.js"></script>

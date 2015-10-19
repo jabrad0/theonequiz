@@ -1,0 +1,35 @@
+/*1) Write a selector that selects only the first each sibling's li elements.
+ Make the text for that item bold, and underlined.*/
+ /*Question 1 is poorly written - I took a stab at what I thought it was asking.
+ i.e., "Write a selector that selects only the first sibling's li elements"?*/
+ .first_sibling_li{
+   font-weight: bold; /*looked up keyword to bold --> "font-weight" not font-style*/
+   text-decoration: underline; /*looked up keyword to underline --> "text-decoration"*/
+ }
+
+/*2) Make all li elements behave as inline elements.*/
+li{
+  display: inline; /*looked up keyword to make inline --> "display"*/
+}
+
+/*3) Only the odd section elements should have a border*/
+.odd_section{
+  border: dashed orange;
+}
+
+/*4) Only the even li elements should have a lime background.*/
+.even_li{
+  background-color: lime;
+}
+
+/*5) Only the first aside element in the 2nd section should have blue font color.*/
+#first_aside{
+  color: blue;
+}
+
+
+/*6) There are three div elements with instructions inside them about which side of the screen they should be displayed on. Follow those instructions.*/
+.right_div{
+  position: absolute;  /*I am still fuzzy on positioning...made a guess and it worked?*/
+  right: 0px;
+}
